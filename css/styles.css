@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box; }
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: white; }
+  header .menu img {
+    object-fit: cover;
+    width: 10%;
+    height: 10%; }
+  header .menu h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+  header .menu ul {
+    list-style: none;
+    display: flex; }
+    header .menu ul li {
+      gap: 10px;
+      margin: 10px; }
+      header .menu ul li button {
+        font-size: 10px;
+        padding: 10px 24px;
+        border-radius: 12px;
+        background-color: blue;
+        color: white;
+        border-color: 2px solid black; }
+
+main h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  color: #c50000; }
+
+main .cuerpo .cuerpoTarjetas {
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  gap: 10px;
+  margin: 10px; }
+  main .cuerpo .cuerpoTarjetas .tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #DEE1E3;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 12px; }
+    main .cuerpo .cuerpoTarjetas .tarjeta h3 {
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: #21545a; }
+    main .cuerpo .cuerpoTarjetas .tarjeta .precio {
+      font-size: 24px;
+      font-family: "DIN Next", sans-serif; }
+    main .cuerpo .cuerpoTarjetas .tarjeta .cant {
+      font-size: 20px;
+      font-weight: bold; }
+    main .cuerpo .cuerpoTarjetas .tarjeta input {
+      width: 5em;
+      font-size: 20px;
+      text-align: center;
+      border: none; }
+    main .cuerpo .cuerpoTarjetas .tarjeta img {
+      object-fit: contain;
+      width: 20vw;
+      height: 30vh; }
+    main .cuerpo .cuerpoTarjetas .tarjeta p {
+      text-align: justify;
+      padding: 10px;
+      font-size: 1rem; }
+    main .cuerpo .cuerpoTarjetas .tarjeta button {
+      background-color: #618685;
+      color: whitesmoke;
+      font-size: 1em;
+      font-family: "DIN Next", sans-serif;
+      height: 2.5em;
+      width: 8em;
+      margin: 5px; }
+    main .cuerpo .cuerpoTarjetas .tarjeta button:focus,
+    main .cuerpo .cuerpoTarjetas .tarjeta button:hover {
+      cursor: pointer; }
+    main .cuerpo .cuerpoTarjetas .tarjeta .precioCantidad {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px; }
+
+main .cuerpo .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); }
+  main .cuerpo .modal .modal-content {
+    position: relative;
+    left: 35%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    border-radius: 30px; }
+    main .cuerpo .modal .modal-content .cerrar {
+      color: black;
+      float: right;
+      font-size: 30px;
+      font-weight: bold; }
+    main .cuerpo .modal .modal-content .cerrar:hover,
+    main .cuerpo .modal .modal-content .cerrar:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer; }
+    main .cuerpo .modal .modal-content .contenidoCarritoProductos {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 10px;
+      justify-content: center;
+      align-items: center; }
+      main .cuerpo .modal .modal-content .contenidoCarritoProductos .contenidoCarritoProductosLista {
+        display: grid;
+        grid-template-columns: 20% 40% 30% 10%;
+        width: 90%;
+        justify-content: center;
+        margin: 5px;
+        font-size: 1.5rem; }
+        main .cuerpo .modal .modal-content .contenidoCarritoProductos .contenidoCarritoProductosLista .eliminarProducto:hover,
+        main .cuerpo .modal .modal-content .contenidoCarritoProductos .contenidoCarritoProductosLista .eliminarProducto:focus {
+          color: red;
+          text-decoration: none;
+          cursor: pointer; }
+      main .cuerpo .modal .modal-content .contenidoCarritoProductos .totalPagar p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold; }
+
+.badge:after {
+  content: attr(value);
+  font-size: 12px;
+  color: #fff;
+  background: red;
+  border-radius: 50%;
+  padding: 0 5px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+  opacity: 0.9; }
+
+.badge:focus,
+.badge:hover {
+  cursor: pointer; }
